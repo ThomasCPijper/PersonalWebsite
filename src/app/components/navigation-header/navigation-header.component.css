@@ -68,6 +68,6 @@ app-navigation-button{
     cursor: pointer;
 }
 
-.clickable:active {
+.button:active {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }

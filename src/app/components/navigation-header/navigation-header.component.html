@@ -2,18 +2,18 @@
     <div class="content">
         <div class="left">
             <div class="image-container clickable">
-                <img src="/assets/images/PF.png" alt="Personal picture">
-                <div class="image-border"></div>
+                <img class="home-image" [routerLink]="['/Home']" src="/assets/images/PF.png" alt="Personal picture">
+                <div class="image-border clickable"></div>
             </div>
-            <app-navigation-button class="clickable" [value]="'Home'" [link]="'/Home'"/>
+            <app-navigation-button class="clickable button" [value]="'Home'" [link]="'/Home'"/>
         </div>
         <div class="middle">
 
         </div>
         <div class="right">
-            <app-navigation-button class="clickable" [value]="'About me'" [link]="'/About-me'"/>
-            <app-navigation-button class="clickable" [value]="'Contact'" [link]="'/Contact'"/>
-            <app-navigation-button class="clickable" [value]="'Portfolio'" [link]="'/Portfolio'"/>
+            <app-navigation-button class="clickable button" [value]="'About me'" [link]="'/About-me'"/>
+            <app-navigation-button class="clickable button" [value]="'Contact'" [link]="'/Contact'"/>
+            <app-navigation-button class="clickable button" [value]="'Portfolio'" [link]="'/Portfolio'"/>
         </div>
     </div>
     <div class="border">
