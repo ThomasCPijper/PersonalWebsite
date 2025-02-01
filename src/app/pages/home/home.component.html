@@ -11,4 +11,33 @@
             <img src="/assets/images/PF.png" alt="Personal picture">
         </div>
     </div>
+    <div class="specialisation-card">
+        <div class="specialisations">
+            <app-specialisation-card 
+                [image]="'/assets/images/angular-logo.png'" 
+                [title]="'Frontend: Angular'"
+            >
+                I specialize in building dynamic and scalable web applications using Angular. 
+                My expertise includes component-based architecture, reactive programming with RxJS, 
+                and state management with NgRx
+            </app-specialisation-card>
+            <app-specialisation-card
+                [image]="'/assets/images/spring-boot.png'"
+                [title]="'Backend: Springboot'"
+            >
+                Developing robust and scalable backend applications is my expertise. 
+                With Spring Boot, I build RESTful APIs, manage data persistence with JPA & Hibernate, 
+                and implement secure authentication using Spring Security. 
+                My focus is on performance, maintainability, and clean architecture.
+            </app-specialisation-card>
+            <app-specialisation-card
+                [image]="'/assets/images/postgresql.png'"
+                [title]="'Database: Postgresql'"
+            >
+                I have experience designing and managing relational databases using PostgreSQL. 
+                I focus on writing optimized SQL queries, indexing strategies, and ensuring data integrity. 
+                I also work with ORMs like Hibernate and query optimization techniques for high-performance applications.
+            </app-specialisation-card>
+        </div>
+    </div>
 </div>

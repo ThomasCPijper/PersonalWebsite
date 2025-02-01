@@ -18,7 +18,8 @@ import { SpecialisationCardComponent } from './home/specialisation-card/speciali
     RouterModule
   ],
   exports: [
-    NavigationHeaderComponent
+    NavigationHeaderComponent,
+    SpecialisationCardComponent
   ]
 })
 export class ComponentsModule { }
