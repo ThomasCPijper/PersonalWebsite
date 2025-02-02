@@ -34,22 +34,22 @@ export class HomeComponent {
 
   ngAfterViewInit() {
     const lines = document.querySelectorAll('.line');
-
+  
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         const line = entry.target as HTMLElement;
-
+  
         if (entry.isIntersecting) {
           line.classList.add('line-grow');
-        } 
-        else {
+        } else {
           line.classList.remove('line-grow');
         }
       });
-  });
-
+    });
+  
     lines.forEach(line => observer.observe(line));
   }
+  
 
   navigate(link: String): void {
     this.router.navigate([link])
