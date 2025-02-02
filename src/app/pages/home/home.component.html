@@ -19,7 +19,7 @@
             >
                 I specialize in building dynamic and scalable web applications using Angular. 
                 My expertise includes component-based architecture, reactive programming with RxJS, 
-                and state management with NgRx
+                and state management with NgRx.
             </app-specialisation-card>
             <app-specialisation-card
                 [image]="'/assets/images/spring-boot.png'"
@@ -39,9 +39,30 @@
                 I also work with ORMs like Hibernate and query optimization techniques for high-performance applications.
             </app-specialisation-card>
         </div>
-        <button class="button-48" role="button" (click)="navigate('/about-me')"><span class="text">Learn more</span></button>
     </div>
     <div class="programming-experience-card">
-        poopie
+        <div class="programming-languages">
+            <h3>Programming Languages</h3>
+            <div class="lines">
+                <div *ngFor="let language of programmingLanguages" class="experience-line">
+                    <label for="{{'line-' + language.name}}">{{ language.name }}</label>
+                    <div class="line-mask">
+                        <div class="line" [style.clip-path]="'inset(0 ' + (100 - language.value) + '% 0 0)'"></div>
+                    </div>
+                </div> 
+            </div>                                  
+        </div>
+        <div class="Skills">
+            <h3>Skills</h3>
+            <div class="lines">
+                <div *ngFor="let skill of skills" class="experience-line">
+                    <label for="{{'line-' + skill.name}}">{{ skill.name }}</label>
+                    <div class="line-mask">
+                        <div class="line" [style.clip-path]="'inset(0 ' + (100 - skill.value) + '% 0 0)'"></div>
+                    </div>
+                </div> 
+            </div> 
+        </div>
     </div>
+    <button class="button-48" role="button" (click)="navigate('/about-me')"><span class="text">Learn more</span></button>
 </div>

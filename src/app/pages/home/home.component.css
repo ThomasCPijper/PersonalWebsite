@@ -129,6 +129,61 @@ a {
     margin-top: 1vh;
 }   
 
+.programming-experience-card {
+    display: flex;
+    flex-direction: row;
+    gap: 3vw;
+}
+
+.lines {
+    margin-top: 1vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.experience-line {
+    display: flex;
+    flex-direction: column;
+}
+
+.line-mask {
+    width: 17vw;
+    height: 15px;
+    overflow: hidden;
+    background-color: #ddd;
+}
+
+.line-container {
+    width: 50vw;
+    height: 15px;
+    background-color: #ddd;
+    overflow: hidden;
+}
+
+.line {
+    width: 0%;
+    height: 100%;
+    background: linear-gradient(to right, #48A6A7, #2973B2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: width 2s ease-out;
+}
+
+.line-grow {
+    width: 100%;
+}
+
+
+@keyframes growLine {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%; /* Final width */
+    }
+}
+
+
 @media only screen and (max-width: 900px) {
     .specialisations {
         flex-direction: column;
