@@ -148,7 +148,7 @@ a {
 }
 
 .line-mask {
-    width: 17vw;
+    min-width: 17vw;
     height: 15px;
     overflow: hidden;
     background-color: #ddd;
@@ -196,5 +196,13 @@ a {
     
     .image-container img {
         max-height: 27vh;
-    }  
+    } 
+    
+    .programming-experience-card {
+        flex-direction: column;
+    }
+
+    .lines {
+        max-width: 77vw;
+    }
 }
