@@ -4,6 +4,7 @@ import { NavigationHeaderComponent } from './navigation-header/navigation-header
 import { NavigationButtonComponent } from './navigation-header/navigation-button/navigation-button.component';
 import { RouterModule } from '@angular/router';
 import { SpecialisationCardComponent } from './home/specialisation-card/specialisation-card.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 
@@ -11,7 +12,8 @@ import { SpecialisationCardComponent } from './home/specialisation-card/speciali
   declarations: [
     NavigationHeaderComponent,
     NavigationButtonComponent,
-    SpecialisationCardComponent
+    SpecialisationCardComponent,
+    FooterComponent
   ],
   imports: [
     CommonModule,
@@ -19,7 +21,8 @@ import { SpecialisationCardComponent } from './home/specialisation-card/speciali
   ],
   exports: [
     NavigationHeaderComponent,
-    SpecialisationCardComponent
+    SpecialisationCardComponent,
+    FooterComponent
   ]
 })
 export class ComponentsModule { }

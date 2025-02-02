@@ -2,15 +2,15 @@
     <div class="content">
         <div class="left">
             <div class="image-container clickable" *ngIf="!isSmallScreen">
-                <img class="home-image" [routerLink]="['/Home']" src="/assets/images/PF.png" alt="Personal picture">
+                <img class="home-image" [routerLink]="['/']" src="/assets/images/PF.png" alt="Personal picture">
                 <div class="image-border clickable"></div>
             </div>
             <app-navigation-button class="clickable button" [value]="'Home'" [link]="'/'"/>
         </div>
         <div class="right">
-            <app-navigation-button class="clickable button" [value]="'About me'" [link]="'/About-me'"/>
-            <app-navigation-button class="clickable button" [value]="'Contact'" [link]="'/Contact'"/>
-            <app-navigation-button class="clickable button" [value]="'Portfolio'" [link]="'/Portfolio'"/>
+            <app-navigation-button class="clickable button" [value]="'About me'" [link]="'/about-me'"/>
+            <app-navigation-button class="clickable button" [value]="'Contact'" [link]="'/contact'"/>
+            <app-navigation-button class="clickable button" [value]="'Portfolio'" [link]="'/portfolio'"/>
         </div>
     </div>
     <div class="border">
